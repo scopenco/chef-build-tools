@@ -1,0 +1,18 @@
+---
+driver:
+  name: vagrant
+  provider: parallels
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: centos-5.10
+    driver:
+      box: parallels/centos-5.10
+
+suites:
+  - name: default
+    run_list:
+      - recipe[build-tools::default]
+    attributes:

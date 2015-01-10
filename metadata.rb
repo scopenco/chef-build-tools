@@ -1,0 +1,10 @@
+name             'build-tools'
+maintainer       'Andrei Scopenco'
+maintainer_email 'andrey@scopenco.net'
+license          'GPL'
+description      'Cookbook for build-tools deployment'
+long_description 'Cookbook for build-tools deployment'
+version          '0.1.0'
+
+depends 'simple_iptables'
+depends 'yum'
